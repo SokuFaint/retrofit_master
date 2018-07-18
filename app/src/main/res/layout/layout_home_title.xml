@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px124"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@id/rl_local"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@id/iv_left"
+            android:layout_width="@dimen/px55"
+            android:layout_height="@dimen/px55"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30"
+            android:contentDescription="@null"
+            android:src="@mipmap/icon_local" />
+
+        <TextView
+            android:id="@id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px15"
+            android:layout_toRightOf="@id/iv_left"
+            android:gravity="center_vertical"
+            android:text="@string/default_city"
+            android:textSize="@dimen/px28" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_title"
+        android:layout_width="@dimen/px650"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/dev_title" />
+
+    <RelativeLayout
+        android:id="@id/rl_share"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="@dimen/px55"
+            android:layout_height="@dimen/px55"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_marginLeft="@dimen/px20"
+            android:contentDescription="@null"
+            android:src="@mipmap/icon_title_share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/rl_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/rl_share">
+        <ImageView
+            android:layout_width="@dimen/px55"
+            android:layout_height="@dimen/px55"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px40"
+            android:contentDescription="@null"
+            android:src="@mipmap/icon_scan" />
+    </RelativeLayout>
+</RelativeLayout>

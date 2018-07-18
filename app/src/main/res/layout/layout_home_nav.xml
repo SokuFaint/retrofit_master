@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:baselineAligned="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px4"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.cocosh.shmstore.widget.NavItemView
+            android:id="@+id/nav_home"
+            style="@style/NavItem"
+            android:textColor="@color/black"
+            zy:src="@mipmap/icon_home_on"
+            zy:text="@string/home" />
+
+        <com.cocosh.shmstore.widget.NavItemView
+            android:id="@+id/nav_chat"
+            style="@style/NavItem"
+            zy:src="@mipmap/icon_chat_off"
+            zy:text="@string/chat" />
+
+        <com.cocosh.shmstore.widget.NavItemView
+            android:id="@+id/nav_group"
+            style="@style/NavItem"
+            zy:src="@mipmap/icon_group_off"
+            zy:text="@string/group" />
+
+        <com.cocosh.shmstore.widget.NavItemView
+            android:id="@+id/nav_message"
+            style="@style/NavItem"
+            zy:src="@mipmap/icon_message_off"
+            zy:text="@string/message" />
+
+        <com.cocosh.shmstore.widget.NavItemView
+            android:id="@+id/nav_my"
+            style="@style/NavItem"
+            zy:src="@mipmap/icon_my_off"
+            zy:text="@string/my" />
+    </LinearLayout>
+</LinearLayout>

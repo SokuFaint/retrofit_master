@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="frame_title" type="id" />
+    <item name="frame_body" type="id" />
+    <item name="iv_left" type="id" />
+    <item name="iv_icon" type="id" />
+    <item name="tv_left" type="id" />
+    <item name="tv_title" type="id" />
+    <item name="iv_scan" type="id" />
+    <item name="iv_share" type="id" />
+    <item name="tv_nav_name" type="id" />
+    <item name="tv_nav_icon" type="id" />
+    <item name="rl_local" type="id" />
+    <item name="rl_share" type="id" />
+    <item name="rl_scan" type="id" />
+
+    <item name="tv_reg" type="id"/>
+    <item name="tv_help" type="id"/>
+
+    <item name="edt_phone" type="id" />
+    <item name="edt_password" type="id" />
+    <item name="btn_login" type="id" />
+
+</resources>

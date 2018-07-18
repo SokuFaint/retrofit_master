@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'//kapt3插件
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.coco_sh.shmstore1"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //初始化lib目录
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //使用databinding
+    dataBinding {
+        enabled = true
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"  //kotlin支持库
+    kapt "com.android.databinding:compiler:2.3.0" //databing支持库
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1' //RxJava库
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1' //android版本的Rxjava 依赖Rxjava库
+    compile 'com.squareup.retrofit2:retrofit:2.3.0' //retrofit Okhttp封装库
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0' //retrofit 的rxjava扩展库
+    compile 'com.google.code.gson:gson:2.8.2' //google的JSON解析库
+    compile 'com.zhy:autolayout:1.4.5' //屏幕适配库
+    compile 'com.yanzhenjie:permission:1.1.2' //权限管理库
+}

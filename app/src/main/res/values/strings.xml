@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">首媒</string>
+    <string name="default_city">定位中</string>
+    <string name="dev_title">开发版本</string>
+
+    <!--首页导航-->
+    <string name="home">首页</string>
+    <string name="chat">聊聊</string>
+    <string name="group">社群</string>
+    <string name="message">消息</string>
+    <string name="my">我的</string>
+    <string name="login">登录</string>
+    <string name="reg_account">注册账户</string>
+    <string name="help">需要帮助</string>
+
+    <!--输入提示-->
+    <string name="input_phone">请输入手机号码</string>
+    <string name="input_password">请输入密码</string>
+</resources>
